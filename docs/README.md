@@ -18,6 +18,7 @@ flowchart TD
     IDEA --> I7[大数据降风险与本地模拟]
     IDEA --> I8[防止线上出问题]
     IDEA --> I9[实时查询架构与Flink取舍]
+    IDEA --> I10[CK MergeTree 引擎家族]
 
     REF --> R1[按角色沟通]
     REF --> R2[优先级冲突]
@@ -43,6 +44,7 @@ flowchart TD
 | [大数据场景的降风险与本地模拟测试](想法/大数据场景的降风险与本地模拟测试.md) | 找 DBA 要"数据画像"清单 + EXPLAIN/分批/走从库/灰度降风险 + 本地造大数据(分布真比量大重要);含"有数据可跑+两边核对" |
 | [防止线上出问题-测试环境测不出的怎么防](想法/防止线上出问题-测试环境测不出的怎么防.md) | 测试鸿沟堵不死→纵深防御:同镜像缩差异、影子流量提前撞、灰度+开关控爆炸半径、监控+降级+回滚兜底 |
 | [实时查询架构-CK-MySQL-ES与Flink怎么配合](想法/实时查询架构-CK-MySQL-ES与Flink怎么配合.md) | Flink 是实时计算非查询;CK/MySQL/ES 按查询类型分工;大盘5分钟分桶用 CK 物化视图+State 再聚合,Flink 留给跨流join/复杂窗口 |
+| [ClickHouse-MergeTree引擎家族区别](想法/ClickHouse-MergeTree引擎家族区别.md) | 区别全在"merge 时对相同排序键的行怎么处理":明细/去重/求和/任意聚合/抵消;查询端要用 FINAL/-Merge 兜口径 |
 
 ## 🪞 反思 / reflections
 

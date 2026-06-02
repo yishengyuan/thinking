@@ -1,0 +1,16 @@
+# GitHub Pages (Jekyll) 配置 —— 站点根为本 docs/ 目录
+title: thinking
+description: 个人思考沉淀 — 想法(ideas)与反思(reflections)
+lang: zh-CN
+
+# 用 just-the-docs 主题:自带导航、搜索,且原生支持 mermaid 渲染
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+# 开启 mermaid:设了 version 后,```mermaid 代码块会被自动渲染成图
+mermaid:
+  version: "10.9.0"
+
+# 让中文标题的 .md 文件也能正常生成页面
+permalink: pretty
