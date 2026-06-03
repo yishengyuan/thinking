@@ -20,6 +20,8 @@ flowchart TD
     IDEA --> I9[实时查询架构与Flink取舍]
     IDEA --> I10[CK MergeTree 引擎家族]
     IDEA --> I11[Claude Code 实用技巧]
+    IDEA --> I12[什么场景用什么语言]
+    IDEA --> I13[怎么给AI好上下文]
 
     REF --> R1[按角色沟通]
     REF --> R2[优先级冲突]
@@ -47,6 +49,8 @@ flowchart TD
 | [实时查询架构-CK-MySQL-ES与Flink怎么配合](想法/实时查询架构-CK-MySQL-ES与Flink怎么配合.md) | Flink 是实时计算非查询;CK/MySQL/ES 按查询类型分工;大盘5分钟分桶用 CK 物化视图+State 再聚合,Flink 留给跨流join/复杂窗口 |
 | [ClickHouse-MergeTree引擎家族区别](想法/ClickHouse-MergeTree引擎家族区别.md) | 区别全在"merge 时对相同排序键的行怎么处理":明细/去重/求和/任意聚合/抵消;查询端要用 FINAL/-Merge 兜口径 |
 | [Claude-Code实用技巧](想法/Claude-Code实用技巧.md) | 上手即用:上下文管理(/context·/compact·子代理)、四符号(/ @ ! #)、CLAUDE.md、计划模式、cleanupPeriodDays、压缩去掉什么 |
+| [什么场景用什么语言](想法/什么场景用什么语言.md) | 默认看团队擅长,只有场景"硬约束"才推翻;场景→语言速查;polyglot 有代价、AI 不改变结论 |
+| [怎么给AI好上下文](想法/怎么给AI好上下文.md) | 把AI当没记忆的新同事:高价值上下文清单、稳定→CLAUDE.md/任务→简报md用@引用、历史精准投喂、反模式、任务简报模板 |
 
 ## 🪞 反思 / reflections
 
