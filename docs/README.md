@@ -9,7 +9,7 @@ flowchart TD
     ROOT --> IDEA[💡 想法 / ideas]
     ROOT --> REF[🪞 反思 / reflections]
 
-    IDEA --> G1[实时查询与数据架构]
+    IDEA --> G1[实时查询与数据架构<br/>+ 推荐/画像]
     IDEA --> G2[测试与上线质量]
     IDEA --> G3[语言与技术选型]
     IDEA --> G4[AI 协作 & 工具]
@@ -31,6 +31,7 @@ flowchart TD
 | [实时报表查询设计](想法/实时报表查询设计.md) | 用查实时表替代定时任务跑批;MySQL 从库 vs ClickHouse 选型;实时 + 历史冷热分离 |
 | [实时查询架构-CK-MySQL-ES与Flink怎么配合](想法/实时查询架构-CK-MySQL-ES与Flink怎么配合.md) | Flink 是实时计算非查询;CK/MySQL/ES 按查询类型分工;大盘5分钟分桶用 CK 物化视图+State 再聚合 |
 | [ClickHouse-MergeTree引擎家族区别](想法/ClickHouse-MergeTree引擎家族区别.md) | 区别全在"merge 时对相同排序键的行怎么处理";查询端要用 FINAL/-Merge 兜口径 |
+| [推荐系统与用户画像设计](想法/推荐系统与用户画像设计.md) | 数据底座+One-ID画像分层+推荐召回/排序/重排+反馈闭环;落到 Kafka/Flink/CK/ES/Redis 双链路 |
 
 ### 🧪 测试与上线质量
 | 文档 | 一句话 |
