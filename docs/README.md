@@ -56,6 +56,7 @@ flowchart TD
 |------|--------|
 | [Claude-Code实用技巧](想法/Claude-Code实用技巧.md) | 上手即用:上下文管理(/context·/compact·子代理)、四符号(/ @ ! #)、CLAUDE.md、计划模式、cleanupPeriodDays |
 | [怎么给AI好上下文](想法/怎么给AI好上下文.md) | 把AI当没记忆的新同事:高价值上下文清单、稳定→CLAUDE.md/任务→简报md用@引用、历史精准投喂、任务简报模板 |
+| [Claude-AI生态工具选用速览](想法/Claude-AI生态工具选用速览.md) | 生态工具汇总:Karpathy准则/Superpowers/Frontend Design/k6·JMeter·Playwright MCP/OpenHuman;含"必装清单"与按需求选,Windows 安装 |
 
 ### ✍️ 学习与表达
 | 文档 | 一句话 |
